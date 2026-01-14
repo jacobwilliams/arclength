@@ -1,0 +1,26 @@
+name = "arclength"
+version = "0.1.0"
+license = "license"
+author = "Jacob Williams"
+maintainer = "jacobwilliams@users.noreply.github.com"
+copyright = "Copyright 2026, Jacob Williams"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+
+[dependencies]
+"fortran-astrodynamics-toolkit" = { git = "https://github.com/jacobwilliams/fortran-astrodynamics-toolkit.git" }
+"quadrature-fortran" = { git = "https://github.com/jacobwilliams/quadrature-fortran.git" }
+
+[install]
+library = false
+test = false
+
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+
