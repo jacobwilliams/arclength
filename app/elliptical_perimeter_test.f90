@@ -60,6 +60,8 @@ program elliptical_perimeter_test
 
                   write(*,*) 'elliptic function result:       ', perimeter_of_ellipse(a,b)
         if (a==b) write(*,*) 'analytical result:              ', (2.0_wp * pi * a)
+                  write(*,*) 'Ramanujan appx 1:               ', pi * (3.0_wp * (a + b) - sqrt((3.0_wp * a + b) * (a + 3.0_wp * b)))
+                  write(*,*) 'Ramanujan appx 2:               ', pi * (a + b) * (1.0_wp + (3.0_wp * ((a - b)/(a + b))**2) / (10.0_wp + sqrt(4.0_wp - 3.0_wp * ((a - b)/(a + b))**2)))
                   write(*,*) 'dquad result:                   ', result
                   write(*,*) 'dquad ier:                      ', ier
                   write(*,*) 'rel err from elliptic function: ', (result - perimeter_of_ellipse(a,b)) / result
