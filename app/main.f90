@@ -4,8 +4,7 @@
     !! using numerical quadrature.
 
     use gooding_module
-    use quadrature_module
-    use iso_fortran_env, only: wp => real64
+    use quadrature_module, wp => quadrature_wp
 
     implicit none
 

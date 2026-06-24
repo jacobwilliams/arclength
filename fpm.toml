@@ -14,6 +14,8 @@ module-naming = false
 [dependencies]
 "fortran-astrodynamics-toolkit" = { git = "https://github.com/jacobwilliams/fortran-astrodynamics-toolkit.git" }
 "quadrature-fortran" = { git = "https://github.com/jacobwilliams/quadrature-fortran.git" }
+"quadpack" = { git = "https://github.com/jacobwilliams/quadpack.git" }
+"carlson-elliptic-integrals" = { git = "https://github.com/jacobwilliams/carlson-elliptic-integrals.git" }
 
 [install]
 library = false
